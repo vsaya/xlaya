@@ -15,8 +15,18 @@
 	<meta charset="utf-8">
 </head>
 <body>
-{{ if .Site.Menus.main }}{{ partial "nav.html" . }}{{ end -}}
 <main>
+    <div class="wrapper">
+        <section class="banner">
+            <a href="#" target="_blank" class="b1" >X</a>
+            <a href="#" target="_blank" class="b2" >S</a>
+            <a href="#" target="_blank" class="b3" >A</a>
+            <a href="#" target="_blank" class="b4" >Y</a>
+            <a href="#" target="_blank" class="b5" >A</a>
+        </section>
+        {{ block "menu" . }}
+        {{ end }}
+    </div>
 <header><h1 id="tag_{{ .Title }}">{{ block "title" . }}{{ end }}</h1></header>
 <article>
 {{ block "main" . }}
@@ -28,7 +38,10 @@
 </main>
 {{ block "footer" . }}
 <footer>
-	<a href="{{ .Site.BaseURL }}">{{ .Site.BaseURL }}</a>
+    <div class="f1 side"><a href="#" target="_blank" class="card letter">三</a></div>
+    <div class="f2"><a href="{{ .Site.BaseURL }}" class="card homelink">{{ .Site.BaseURL }}</a></div>
+    <div class="f3 side"><a href="#" target="_blank" class="card letter">五</a></div>
+
 	{{- if .Param "showrss" }}<br><br><a href="/index.xml"><img src="/rss.svg" style="max-height:1.5em" alt="RSS Feed" title="Subscribe via RSS for updates."></a>{{ end }}
 </footer>
 {{ end }}

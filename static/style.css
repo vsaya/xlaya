@@ -1,7 +1,660 @@
+* {
+    font-family: Fira Code, Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+    background-color: #110e10;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+.wrapper {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner a {
+    flex: 1 1 auto;
+    text-align: center;
+    font-size: 1.04rem;
+}
+
+.b1 {
+    animation: cardEntrance 700ms ease-out;
+    animation-fill-mode: backwards;
+    animation-delay: 1.4s;
+    background-color: transparent;
+    pointer-events: none;
+}
+
+.b2 {
+    animation: cardEntrance 700ms ease-out;
+    animation-fill-mode: backwards;
+    animation-delay: 0.4s;
+    background-color: transparent;
+    pointer-events: none;
+}
+.b3 {
+    animation: cardEntrance 700ms ease-out;
+    animation-fill-mode: backwards;
+    animation-delay: 2s;
+    background-color: transparent;
+    pointer-events: none;
+}
+.b4 {
+    animation: cardEntrance 700ms ease-out;
+    animation-fill-mode: backwards;
+    animation-delay: 1s;
+    background-color: transparent;
+    pointer-events: none;
+}
+.b5 {
+    animation: cardEntrance 700ms ease-out;
+    animation-fill-mode: backwards;
+    animation-delay: 2.4s;
+    background-color: transparent;
+    pointer-events: none;
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 768px) {
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .menu a {
+        flex: 2rem 1 auto;
+        flex-basis: 20%;
+        text-align: center;
+        font-size: 0.4rem;
+
+        -ms-transform: skewX(-20deg);
+        -webkit-transform: skewX(-20deg);
+        transform: skewX(-20deg);
+
+        background-color: #40353C;
+
+        /* transform: skew(-30deg); */
+        /* transform-origin:top; */
+    }
+
+    .menu a:hover {
+        background-color: #E8CFDF;
+        text-decoration: underline;
+        color: black;
+    }
+
+    .menu a div {
+        font-size: 1.1rem;
+
+        -ms-transform: skewX(20deg);
+        -webkit-transform: skewX(20deg);
+        transform: skewX(20deg); 
+        display: inline-block;
+
+        background-color: inherit;
+        text-decoration: inherit;
+        color: inherit;
+        padding: .4rem;
+
+    }
+
+    .m1 {
+        animation: cardEntrance 300ms ease-out;
+        animation-fill-mode: backwards;
+        background-color: transparent;
+    }
+
+    .m2 {
+        animation: cardEntrance 300ms ease-out;
+        animation-fill-mode: backwards;
+        animation-delay: 0.1s;
+        background-color: transparent;
+    }
+    .m3 {
+        animation: cardEntrance 300ms ease-out;
+        animation-fill-mode: backwards;
+        animation-delay: 0.2s;
+        background-color: transparent;
+    }
+    .m4 {
+        animation: cardEntrance 300ms ease-out;
+        animation-fill-mode: backwards;
+        animation-delay: 0.3s;
+        background-color: transparent;
+    }
+
+    /* this is for sub-pages, no real menu, just a back button */
+    .backMenu {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        margin-left: 16%;
+    }
+
+    .backMenu a {
+        flex: 2rem 1 auto;
+        flex-basis: 20%;
+        text-align: center;
+        font-size: 0.4rem;
+
+        -ms-transform: skewX(-20deg);
+        -webkit-transform: skewX(-20deg);
+        transform: skewX(-20deg);
+
+        background-color: #40353C;
+
+        /* transform: skew(-30deg); */
+        /* transform-origin:top; */
+    }
+
+    .backMenu a:hover {
+        background-color: #E8CFDF;
+        text-decoration: underline;
+        color: black;
+    }
+
+    .backMenu a div {
+        font-size: 1rem;
+
+        -ms-transform: skewX(20deg);
+        -webkit-transform: skewX(20deg);
+        transform: skewX(20deg); 
+        display: inline-block;
+
+        background-color: inherit;
+        text-decoration: inherit;
+        color: inherit;
+        padding: .4rem;
+
+    }
+
+    .bm1 {
+        animation: cardEntrance 300ms ease-out;
+        animation-fill-mode: backwards;
+        animation-delay: .1s;
+        background-color: transparent;
+    }
+
+    .bm2 {
+        /* color: #6BFF7E; */
+        animation: cardEntrance 300ms ease-out;
+        animation-fill-mode: backwards;
+        animation-delay: 0.2s;
+        background-color: #1C171A !important;
+        pointer-events: none;
+    }
+
+    .contentWidth {
+        width: 68%
+    }
+    .listWidth {
+        width: 58%
+    }
+    .content p {
+        animation: cardEntrance 700ms ease-out;
+        animation-fill-mode: backwards;
+        animation-delay: 0.3s;
+        width: 68%;
+    }
+    .profile p {
+        animation: cardEntrance 700ms ease-out;
+        animation-fill-mode: backwards;
+        animation-delay: 0.3s;
+        width: 68%;
+    }
+
+
+    ol {
+        list-style-type: lower-roman;
+        width: 58%;
+    }
+
+    ul {
+        list-style-type: none;
+        width: 58%;
+        margin: 0;
+    }
+
+}
+
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 120px) 
+and (max-device-width : 767px) {
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;
+
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .menu a {
+        flex: 2rem 1 auto;
+        /* flex-basis: 20%; */
+        text-align: center;
+        font-size: 0.4rem;
+
+        background-color: #40353C;
+
+        /* transform: skew(-30deg); */
+        /* transform-origin:top; */
+    }
+
+    .menu a:hover {
+        background-color: #E8CFDF;
+        text-decoration: underline;
+        color: black;
+    }
+
+    .menu a div {
+        font-size: 1.1rem;
+
+        background-color: inherit;
+        text-decoration: inherit;
+        color: inherit;
+        padding: .4rem;
+
+    }
+
+    .m1 {
+        animation: cardEntrance 300ms ease-out;
+        animation-fill-mode: backwards;
+        background-color: transparent;
+    }
+
+    .m2 {
+        animation: cardEntrance 300ms ease-out;
+        animation-fill-mode: backwards;
+        animation-delay: 0.1s;
+        background-color: transparent;
+    }
+    .m3 {
+        animation: cardEntrance 300ms ease-out;
+        animation-fill-mode: backwards;
+        animation-delay: 0.2s;
+        background-color: transparent;
+    }
+    .m4 {
+        animation: cardEntrance 300ms ease-out;
+        animation-fill-mode: backwards;
+        animation-delay: 0.3s;
+        background-color: transparent;
+    }
+
+    /* this is for sub-pages, no real menu, just a back button */
+    .backMenu {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        margin-left: 16%;
+    }
+
+    .backMenu a {
+        flex: 2rem 1 auto;
+        flex-basis: 20%;
+        text-align: center;
+        font-size: 0.4rem;
+
+        background-color: #40353C;
+
+        /* transform: skew(-30deg); */
+        /* transform-origin:top; */
+    }
+
+    .backMenu a:hover {
+        background-color: #E8CFDF;
+        text-decoration: underline;
+        color: black;
+    }
+
+    .backMenu a div {
+        font-size: 1rem;
+
+        background-color: inherit;
+        text-decoration: inherit;
+        color: inherit;
+        padding: .4rem;
+
+    }
+
+    .bm1 {
+        animation: cardEntrance 300ms ease-out;
+        animation-fill-mode: backwards;
+        animation-delay: .1s;
+        background-color: transparent;
+    }
+
+    .bm2 {
+        /* color: #6BFF7E; */
+        animation: cardEntrance 300ms ease-out;
+        animation-fill-mode: backwards;
+        animation-delay: 0.2s;
+        background-color: #1C171A !important;
+        pointer-events: none;
+    }
+
+    .content p {
+        animation: cardEntrance 700ms ease-out;
+        animation-fill-mode: backwards;
+        animation-delay: 0.3s;
+        width: 92%;
+    }
+    .profile p {
+        animation: cardEntrance 700ms ease-out;
+        animation-fill-mode: backwards;
+        animation-delay: 0.3s;
+        width: 92%;
+    }
+
+
+    ol {
+        list-style-type: lower-roman;
+        width: 82%;
+    }
+
+    ul {
+        list-style-type: none;
+        width: 82%;
+        margin: 0;
+    }
+
+
+}
+
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.profile h3 {
+    animation: cardEntrance 600ms ease-out;
+    animation-fill-mode: backwards;
+    animation-delay: 0.2s;
+} 
+
+/* This is for content pages that link from the main site */
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.content h3 {
+    animation: cardEntrance 600ms ease-out;
+    animation-fill-mode: backwards;
+    animation-delay: 0.2s;
+} 
+
+ul > li {
+  text-indent: -5px;
+  margin: 5px;
+  padding-bottom: 1em;
+}
+
+ul > li:before {
+  content: "- ";
+  text-indent: -5px;
+}
+
+
+
+.suuviIcon {
+    width: 12%;
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.posts h3 {
+    animation: cardEntrance 600ms ease-out;
+    animation-fill-mode: backwards;
+    animation-delay: 0.5s;
+} 
+
+.p1  {
+    animation: cardEntrance 600ms ease-out;
+    animation-fill-mode: backwards;
+    animation-delay: 0.6s;
+}
+.p2  {
+    animation: cardEntrance 600ms ease-out;
+    animation-fill-mode: backwards;
+    animation-delay: 0.7s;
+}
+.p3  {
+    animation: cardEntrance 600ms ease-out;
+    animation-fill-mode: backwards;
+    animation-delay: 0.8s;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.projects h3 {
+    animation: cardEntrance 600ms ease-out;
+    animation-fill-mode: backwards;
+    animation-delay: 0.5s;
+} 
+
+.pr1  {
+    animation: cardEntrance 600ms ease-out;
+    animation-fill-mode: backwards;
+    animation-delay: 0.6s;
+}
+.pr2  {
+    animation: cardEntrance 600ms ease-out;
+    animation-fill-mode: backwards;
+    animation-delay: 0.7s;
+}
+.pr3  {
+    animation: cardEntrance 600ms ease-out;
+    animation-fill-mode: backwards;
+    animation-delay: 0.8s;
+}
+
+
+
+.f0 {
+    display: flex;
+    justify-content: center;
+    animation: cardEntrance 600ms ease-out;
+    animation-fill-mode: backwards;
+    animation-delay: 2.2s;
+    background: transparent;
+
+}
+.f0 img {
+    flex: .1;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    /* filter: invert(100%); */
+    background: transparent;
+    /* -webkit-filter: invert(100%); /1* safari 6.0 - 9.0 *1/ */
+    /*       filter: invert(100%); */
+    margin-top: 6rem;
+    margin-bottom: 1rem;
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 2rem;
+}
+
+footer div {
+    flex: 1 1 auto;
+    text-align: center;
+    font-size: 0.4rem;
+
+}
+
+.f1 {
+    animation: cardEntrance 600ms ease-out;
+    animation-fill-mode: backwards;
+    animation-delay: 2.2s;
+}
+.f2 {
+    animation: cardEntrance 600ms ease-out;
+    animation-fill-mode: backwards;
+    animation-delay: 0.1s;
+}
+.f3 {
+    animation: cardEntrance 600ms ease-out;
+    animation-fill-mode: backwards;
+    animation-delay: 2.4s;
+}
+
+@keyframes cardEntrance {
+    from {
+        opacity: 0;
+        transform: scale(0.3);
+        filter: hue-rotate(180deg);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+        filter: hue-rotate(0deg);
+    }
+}
+
+.card {
+    color: #D0BBBB;
+    background-color: transparent;
+    font-size: 1.4rem;
+}
+
+.clickable {
+    color: #F18B4B;
+}
+
+.letter {
+    font-size: .8em;
+    pointer-events: none;
+}
+
+div p {
+    margin: 1rem;
+    background-color: transparent;
+}
+
+.quiet {
+    margin: 3rem;
+    background-color: transparent;
+}
+
+.post {
+    color: #FFCE77;
+    background-color: transparent;
+
+    text-align: left !important;
+    justify-content: left !important;
+    font-size: 1rem !important;
+}
+
+.side {
+    font-size: 1.25rem;
+    background: transparent !important;
+}
+
+.homelink {
+    /* margin-top: 3rem; */
+    font-size: 0.98rem;
+    background: transparent !important;
+}
+
+.xtitle {
+    font-size: 2.2rem;
+    background: transparent !important;
+}
+
+.desc {
+    font-size: 0.9rem;
+    text-emphasis-style: italic;
+    margin-left: 6rem;
+    color: gray;
+}
+
+a:hover {
+    /* background-color: #2E272C; */
+    text-decoration: underline;
+}
+
+.homelink:hover {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+strong {
+    color: #72CB26;
+}
+
+/* original theme settings: //////////////////////////  */ 
 body {
-	font-family: sans-serif ;
-	background: #110000 ;
-	color: #ccc ;
+	/* font-family: sans-serif ; */
+	/* background: #110000 ; */
+	/* color: #ccc ; */
 }
 
 main {

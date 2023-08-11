@@ -2,6 +2,33 @@ title = "xsaya"
 baseURL = 'https://xsaya.com'
 languageCode = 'en-us'
 
+# main menu
+[menu]
+[[menu.main]]
+  name = 'stories'
+  pageRef = '/stories'
+  weight = 10
+  [[menu.main.params]]
+  class = 'm1'
+[[menu.main]]
+  name = 'posts'
+  pageRef = '/posts'
+  weight = 20
+  [[menu.main.params]]
+  class = 'm2'
+[[menu.main]]
+  name = 'contact'
+  pageRef = '/contact'
+  weight = 30
+  [[menu.main.params]]
+  class = 'm3'
+[[menu.main]]
+  name = 'donate'
+  pageRef = '/donate'
+  weight = 40
+  [[menu.main.params]]
+  class = 'm4'
+
 [params]
   # "relatedtext" is the text that appears above the tag list at the bottom of pages.
   relatedtext = "Related"
